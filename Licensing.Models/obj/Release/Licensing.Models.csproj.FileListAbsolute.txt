@@ -1,6 +1,0 @@
-c:\users\alan\documents\visual studio 2013\Projects\AzureLicensing\Licensing.Models\bin\Release\Licensing.Models.dll
-c:\users\alan\documents\visual studio 2013\Projects\AzureLicensing\Licensing.Models\bin\Release\Licensing.Models.pdb
-c:\users\alan\documents\visual studio 2013\Projects\AzureLicensing\Licensing.Models\bin\Release\log4net.dll
-c:\users\alan\documents\visual studio 2013\Projects\AzureLicensing\Licensing.Models\bin\Release\log4net.xml
-c:\users\alan\documents\visual studio 2013\Projects\AzureLicensing\Licensing.Models\obj\Release\Licensing.Models.dll
-c:\users\alan\documents\visual studio 2013\Projects\AzureLicensing\Licensing.Models\obj\Release\Licensing.Models.pdb
