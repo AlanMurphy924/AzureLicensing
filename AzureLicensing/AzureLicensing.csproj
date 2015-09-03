@@ -253,10 +253,14 @@
     <None Include="Properties\PublishProfiles\LicensingWebApp - FTP %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\LicensingWebApp - FTP %283%29.pubxml" />
     <None Include="Properties\PublishProfiles\LicensingWebApp - FTP %284%29.pubxml" />
+    <None Include="Properties\PublishProfiles\LicensingWebApp - FTP %285%29.pubxml" />
+    <None Include="Properties\PublishProfiles\LicensingWebApp - FTP %286%29.pubxml" />
     <None Include="Properties\PublishProfiles\LicensingWebApp - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\LicensingWebApp - Web Deploy %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\LicensingWebApp - Web Deploy %283%29.pubxml" />
     <None Include="Properties\PublishProfiles\LicensingWebApp - Web Deploy %284%29.pubxml" />
+    <None Include="Properties\PublishProfiles\LicensingWebApp - Web Deploy %285%29.pubxml" />
+    <None Include="Properties\PublishProfiles\LicensingWebApp - Web Deploy %286%29.pubxml" />
     <None Include="Properties\PublishProfiles\LicensingWebApp - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />

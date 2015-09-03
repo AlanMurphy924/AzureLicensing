@@ -22,8 +22,8 @@ namespace AzureLicensing.Mappers
         private const string ConsignorAdditionalField3Column = "ConsignorAdd3";
         private const string PinColumn = "Pin";
         private const string ColossusRegistrationNumberColumn = "ColossusRegNo";
-        private const string ColossusDesktopLicensesColumn = "ColossusDesktopLicenses";
-        private const string ColossusMobileLicensesColumn = "ColossusMobileLicenses";
+        private const string ColossusDesktopLicensesColumn = "ColossusDesktopLicences";
+        private const string ColossusMobileLicensesColumn = "ColossusMobileLicences";
         private const string ColossusMobileUrlColumn = "ColossusMobileUrl";
             
         public CompanyMapper()
