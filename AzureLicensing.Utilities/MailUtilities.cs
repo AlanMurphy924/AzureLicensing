@@ -1,5 +1,4 @@
 ﻿using AzureLicensing;
-using AzureLicensing.DAL;
 using ColossusLicensing.Models;
 using log4net;
 using System;
@@ -61,12 +60,9 @@ namespace AzureLicencing.Utilities
         }
 
         // Send email notification.
-        public static void SendEmail(LicensingContext db, MobileDevice mobileDevice, string type)
+        public static void SendEmail(int numberOfDevices, MobileDevice mobileDevice, string type)
         {
             logger.Debug("SendMail(LicensingContext, MobileDevice, string) entered ...");
-
-            // Get the number of devices belonging to a Company
-            int numberOfDevices = 1;// db.MobileDevices.Count(d => d.CompanyId == mobileDevice.CompanyId);
 
             try
             {

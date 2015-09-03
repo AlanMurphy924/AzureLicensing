@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Licensing.Models", "Licensi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Licensing.Mappers", "Licensing.Mappers\Licensing.Mappers.csproj", "{A4DB0D3B-4D83-422E-95D9-EC0B27117B3C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureLicensing.Utilities", "AzureLicensing.Utilities\AzureLicensing.Utilities.csproj", "{541BAB6E-2441-496A-BD55-B7991AFA6EDE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{A4DB0D3B-4D83-422E-95D9-EC0B27117B3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4DB0D3B-4D83-422E-95D9-EC0B27117B3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A4DB0D3B-4D83-422E-95D9-EC0B27117B3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{541BAB6E-2441-496A-BD55-B7991AFA6EDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{541BAB6E-2441-496A-BD55-B7991AFA6EDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{541BAB6E-2441-496A-BD55-B7991AFA6EDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{541BAB6E-2441-496A-BD55-B7991AFA6EDE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

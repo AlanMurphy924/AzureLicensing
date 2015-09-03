@@ -117,7 +117,8 @@ namespace AzureLicensing.Controllers
                 logger.DebugFormat("New device with Id : {0} created", device.MobileDeviceId);
 
                 // Send email ...
-                MailUtilities.SendEmail(db, device, "licensed");
+                int numberOfDevices = db.MobileDevices.Count(d => d.CompanyId == device.MobileDeviceId);
+                MailUtilities.SendEmail(numberOfDevices, device, "licensed");
 
                 // Return configuration.
                 return Ok(new LicenseResponse()
