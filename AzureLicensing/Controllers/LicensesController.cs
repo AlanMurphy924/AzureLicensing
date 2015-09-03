@@ -11,6 +11,9 @@ using System.Web.Http.Description;
 
 namespace AzureLicensing.Controllers
 {
+    /// <summary>
+    /// License result codes
+    /// </summary>
     enum LicenceResultCode
     {
         Success = 0,
@@ -20,6 +23,9 @@ namespace AzureLicensing.Controllers
         Unknown = -5
     }
 
+    /// <summary>
+    /// Relicense result codes
+    /// </summary>
     enum RelicenceResultCode
     {
         Success = 0,
@@ -27,16 +33,26 @@ namespace AzureLicensing.Controllers
         Unknown = -5
     }
 
+    /// <summary>
+    /// Controller for licensing web api methods.
+    /// </summary>
     [RoutePrefix("api/Licenses")]
     public class LicensesController : ApiController
     {
-        // Create logger for Log4Net
+        /// <summary>
+        /// Create Logger for log4net
+        /// </summary>
         private static readonly ILog logger = LogManager.GetLogger(typeof(LicensesController));
 
+        /// <summary>
+        /// Create a new instance of the LicensingContext
+        /// </summary>
         private LicensingContext db = new LicensingContext();
-            // POST: api/Licences/License
+
+        // POST: api/Licences/License
         [ResponseType(typeof(LicenseResponse))]
         [Route("License")]
+        [HttpPost]
         public IHttpActionResult PostLicense([FromBody] LicenseRequest request)
         {
             logger.Debug("PostLicense(LicenseRequest) entered ...");
@@ -94,8 +110,8 @@ namespace AzureLicensing.Controllers
                     CompanyId = company.CompanyId,
                 };
 
+                // Add to the collection of Mobile Devices ...
                 device = db.MobileDevices.Add(device);
-
                 db.SaveChanges();
 
                 logger.DebugFormat("New device with Id : {0} created", device.MobileDeviceId);
@@ -136,6 +152,7 @@ namespace AzureLicensing.Controllers
         // POST: api/Licences/Relicense
         [ResponseType(typeof(LicenseResponse))]
         [Route("Relicense")]
+        [HttpPost]
         public IHttpActionResult PostRelicense([FromBody] RelicenseRequest request)
         {
             logger.Debug("PostRelicense(ReliscenseRequest) entered ...");
@@ -189,6 +206,34 @@ namespace AzureLicensing.Controllers
             {
                 logger.Debug("PostRelicense(ReliscenseRequest) exited");
             }
+        }
+
+        bool disposed = false;
+
+        /// <summary>
+        /// Override Dispose
+        /// </summary>
+        /// <param name="disposing"></param>
+        protected override void Dispose(bool disposing)
+        {
+            // If already disposed return immediately
+            if (disposed)
+            {
+                return;
+            }
+
+            if (disposing)
+            {
+                // Dispose the LicensingContext
+                if (db != null)
+                {
+                    db.Dispose();
+                }
+            }
+
+            disposed = true;
+
+            base.Dispose(disposing);
         }
     }
 }
