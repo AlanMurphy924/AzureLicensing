@@ -212,8 +212,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Mappers\CompanyMapper.cs" />
-    <Compile Include="Mappers\MobileDeviceMapper.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -299,6 +297,10 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Licensing.Mappers\Licensing.Mappers.csproj">
+      <Project>{a4db0d3b-4d83-422e-95d9-ec0b27117b3c}</Project>
+      <Name>Licensing.Mappers</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Licensing.Models\Licensing.Models.csproj">
       <Project>{1c703930-10ca-4e6a-a4ab-0526503ee27a}</Project>
       <Name>Licensing.Models</Name>
