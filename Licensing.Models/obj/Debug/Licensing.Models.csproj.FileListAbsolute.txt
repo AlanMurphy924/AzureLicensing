@@ -1,0 +1,7 @@
+c:\users\alan\documents\visual studio 2013\Projects\AzureLicensing\Licensing.Models\bin\Debug\Licensing.Models.dll
+c:\users\alan\documents\visual studio 2013\Projects\AzureLicensing\Licensing.Models\bin\Debug\Licensing.Models.pdb
+c:\users\alan\documents\visual studio 2013\Projects\AzureLicensing\Licensing.Models\obj\Debug\Licensing.Models.dll
+c:\users\alan\documents\visual studio 2013\Projects\AzureLicensing\Licensing.Models\obj\Debug\Licensing.Models.pdb
+c:\users\alan\documents\visual studio 2013\Projects\AzureLicensing\Licensing.Models\bin\Debug\log4net.dll
+c:\users\alan\documents\visual studio 2013\Projects\AzureLicensing\Licensing.Models\bin\Debug\log4net.xml
+C:\Users\Alan\Documents\Visual Studio 2013\Projects\AzureLicensing\Licensing.Models\obj\Debug\Licensing.Models.csprojResolveAssemblyReference.cache
